@@ -9,6 +9,13 @@ namespace PdfSearch_demo
             optionsBuilder.UseSqlite(@"Data Source=.\AppUsers.db");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Username)
+                .IsUnique();
+        }
+
         public DbSet<User> Users { get; set; }
     }
 }

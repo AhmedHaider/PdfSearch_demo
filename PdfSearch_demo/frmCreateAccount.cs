@@ -12,6 +12,7 @@
             if (string.IsNullOrWhiteSpace(txtUserName.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 Close();
+                return;
             }
 
             using var db = new AppDbContext();
