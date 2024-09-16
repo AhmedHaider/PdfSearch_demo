@@ -6,6 +6,7 @@ namespace PdfSearch_demo;
 public partial class frmMain : Form
 {
     string executingDirectory = string.Empty;
+
     public frmMain()
     {
         InitializeComponent();

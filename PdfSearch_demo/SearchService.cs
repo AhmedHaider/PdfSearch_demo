@@ -6,26 +6,6 @@ namespace PdfSearch_demol;
 
 internal class SearchService
 {
-    //public static void SearchFileName(ListBox lstResult, TextBox txtFolderPath, TextBox txtSearchTerm)
-    //{
-    //    // Get all PDF files in the directory and subdirectories
-    //    var files = Directory.GetFiles(txtFolderPath.Text, "*.pdf", SearchOption.AllDirectories);
-
-    //    // Filter the files where the name contains the search term
-    //    var foundFiles = files.Where(file => Path.GetFileName(file)
-    //        .Contains(txtSearchTerm.Text, StringComparison.OrdinalIgnoreCase));
-
-    //    // Clear previous results from the ListBox
-    //    lstResult.Items.Clear();
-
-    //    // Add only the file name (without the path) to the ListBox
-    //    foreach (var file in foundFiles)
-    //    {
-    //        string fileName = Path.GetFileName(file);
-    //        lstResult.Items.Add(fileName);
-    //    }
-    //}
-
     public static void SearchFileName(ListBox lstResult, TextBox txtFolderPath, TextBox txtSearchTerm)
     {
         // Get all PDF files in the directory and subdirectories
