@@ -1,0 +1,7 @@
+- The application requires .NET 8.0 Runtime to be installed in order to run properly.
+- Default username/password: admin/123.
+- Username and password are currently stored in plain text without any encryption applied to the password in the database.
+- The feature for logging in with Domain users has not been implemented yet.
+- The application has not been fully tested for bugs or programming errors, and it is still under development.
+- The application currently uses SQLite as the database for simplicity, but SQL Server will be used when required.
+- Unlimited users can be created using the "Create an Account" button.
