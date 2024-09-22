@@ -31,6 +31,7 @@
             txtUserName = new TextBox();
             txtPassword = new TextBox();
             btnRegister = new Button();
+            btnClose = new Button();
             SuspendLayout();
             // 
             // txtUserName
@@ -68,12 +69,28 @@
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Tomato;
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(227, 2);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(36, 27);
+            btnClose.TabIndex = 4;
+            btnClose.TabStop = false;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // frmCreateAccount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(264, 292);
+            Controls.Add(btnClose);
             Controls.Add(txtUserName);
             Controls.Add(txtPassword);
             Controls.Add(btnRegister);
@@ -90,5 +107,6 @@
         private TextBox txtUserName;
         private TextBox txtPassword;
         private Button btnRegister;
+        private Button btnClose;
     }
 }

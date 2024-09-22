@@ -20,11 +20,14 @@
             {
                 Username = txtUserName.Text,
                 Password = txtPassword.Text,
+                IsAuthorized = true
             };
 
             db.Users.Add(newUser);
             db.SaveChanges();
             Close();
         }
+
+        private void btnClose_Click(object sender, EventArgs e) => Close();
     }
 }
