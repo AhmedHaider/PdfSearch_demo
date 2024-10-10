@@ -14,9 +14,15 @@ public partial class frmMain : Form
 
     private void btnBrowse_Click(object sender, EventArgs e)
     {
-        using FolderBrowserDialog fbd = new FolderBrowserDialog();
+        using FolderBrowserDialog fbd = BrowseFolder();
+    }
+
+    private FolderBrowserDialog BrowseFolder()
+    {
+        FolderBrowserDialog fbd = new FolderBrowserDialog();
         if (fbd.ShowDialog() == DialogResult.OK)
             txtFolderPath.Text = fbd.SelectedPath;
+        return fbd;
     }
 
     private async void btnSearch_Click(object sender, EventArgs e)
@@ -56,9 +62,7 @@ public partial class frmMain : Form
 
         // Show a message if no files are found
         if (lstResult.Items.Count < 1)
-        {
             MessageBox.Show("No files found containing your search criterion.");
-        }
     }
 
     private void lstResult_DoubleClick(object sender, EventArgs e)

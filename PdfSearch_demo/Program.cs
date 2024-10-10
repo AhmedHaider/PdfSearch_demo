@@ -13,9 +13,9 @@ namespace PdfSearch_demo
             ApplicationConfiguration.Initialize();
 
 
-            using frmLogin loginForm = new();
-            if (loginForm.ShowDialog() == DialogResult.OK)
-                Application.Run(new frmMain());
+            //using frmLogin loginForm = new();
+            //if (loginForm.ShowDialog() == DialogResult.OK)
+                Application.Run(new frmTestEncrypt());
         }
     }
 }
